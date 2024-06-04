@@ -1,0 +1,132 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Ensure children stack vertically */
+    align-items: center; /* Center horizontally */
+}
+
+/* Header styles */
+header {
+    background-color: #ff5252;
+    padding: 10px;
+    text-align: right;
+}
+
+.language-switch {
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.phone-icon::before {
+    content: "\260E"; /* Phone icon (Unicode) */
+}
+
+.lock-icon::before {
+    content: "\1F512"; /* Lock icon (Unicode) */
+}
+
+button.register-btn {
+    background-color: #ff5252;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Responsive adjustments (for mobile screens) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    button.register-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    /* Centering the button */
+    button.register-btn {
+        margin-top: 20px; /* Add margin to separate from other elements */
+    }
+}

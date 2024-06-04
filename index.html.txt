@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        
+        <main>
+            <form action="#" method="post">
+                <h1>Airdrop</h1>
+                <div class="input-group">
+                    <input type="text" id="phone" placeholder="Phone number" required>
+                    <span class="icon phone-icon"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Set password" required>
+                    <span class="icon lock-icon"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" placeholder="Confirm password" required>
+                    <span class="icon lock-icon"></span>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+            <p>
+                <label>
+                    <input type="checkbox" required>
+                    I have read and agree to the <a href="#">Privacy Agreement</a>
+                </label>
+            </p>
+            <footer>
+                <a href="#">I have an account. Log in</a>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
